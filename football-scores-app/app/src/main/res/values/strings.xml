@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- General -->
+    <string name="app_name">Football Scores</string>
+    <string name="about">About</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="scores_empty_list_message">The list of scores is empty.</string>
+
+    <!-- Texts -->
+    <string name="test_text">Test</string>
+    <string name="about_text">
+        This Application get Football Matches Score for the Premier League,Seria A,Bundesliga,Primera Division
+        and the Uefa Champions League.
+        All Matches data are acquired from football-data.org free API.
+        All team Logos are acquired from http://hdlogo.wordpress.com/ upon requesting permission form the owner.
+        The original version of this app was created by Yahia Khalid Ibn El Walid Ahmed, and a modified version is given to students in the Udacity Android Nanodegree program.
+        To report any bugs,or suggestions do not hesitate to send a mail to y.k.ibnelwalid@gmail.com.
+
+        During the off season, fake data will be added to the app.
+    </string>
+    <string name="share_text">Share</string>
+
+    <!-- Days -->
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="tomorrow">Tomorrow</string>
+
+    <!-- Match day -->
+    <string name="matchday_text">Match day</string>
+    <string name="group_stage_text">Group stages</string>
+    <string name="first_knockout_round">First knockout round</string>
+    <string name="quarter_final">Quarter Final</string>
+    <string name="semi_final">Semi Final</string>
+    <string name="final_text">Final</string>
+
+    <!-- Leagues -->
+    <string name="bundesliga1" translatable="false">Bundesliga 1</string>
+    <string name="bundesliga2" translatable="false">Bundesliga 2</string>
+    <string name="bundesliga3" translatable="false">Bundesliga 3</string>
+    <string name="ligue2" translatable="false">Ligue 2</string>
+    <string name="ligue1" translatable="false">Ligue 1</string>
+    <string name="premierleague" translatable="false">Premier League</string>
+    <string name="primeradivison" translatable="false">Primera Division</string>
+    <string name="segunda_division" translatable="false">Segunda Division</string>
+    <string name="seriaa" translatable="false">Serie A</string>
+    <string name="primeira_liga" translatable="false">Primeira Liga</string>
+    <string name="eredivise" translatable="false">Eredivise</string>
+    <string name="champions_league" translatable="false">UEFA Champions League</string>
+    <string name="league_one" translatable="false">League One</string>
+    <string name="unknown_league">Unknown League Please report it.</string>
+
+    <!-- Widget -->
+    <string name="add_widget">Add widget</string>
+    <string name="title_today_scores_widget">Todays Scores</string>
+    <string name="message_today_scores_empty">The list of scores is empty for today.</string>
+    <string name="widget_update_period_millis">86400000</string>
+
+    <!-- WS API -->
+    <string name="api_key">228b2bb3f4e24602b53f564aff1a7f6b</string>
+
+    <!-- Descriptions -->
+    <string name="description_match_day">Day of Match</string>
+    <string name="description_league_name">Name of League</string>
+    <string name="description_match_share">Share the match</string>
+    <string name="description_home_team_crest">Home team crest</string>
+    <string name="description_home_team_name">Home team name</string>
+    <string name="description_match_score">Match score</string>
+    <string name="description_match_time">Match time</string>
+    <string name="description_away_team_name">Away team name</string>
+    <string name="description_away_team_crest">Away team crest</string>
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Fonts and displays size -->
+    <dimen name="TeamNames">17sp</dimen>
+    <dimen name="Score">30sp</dimen>
+    <dimen name="League">15sp</dimen>
+    <dimen name="widget_margin">7dp</dimen>
+
+    <!-- Keylines -->
+    <dimen name="keyline_1">10dp</dimen>
+
+    <!-- League -->
+    <dimen name="league_name_padding">12dp</dimen>
+    <dimen name="card_view_margin">4dp</dimen>
+    <dimen name="card_view_margin_half">12dp</dimen>
+
+    <!-- Today scores widget -->
+    <dimen name="widget_today_scores_height">200dp</dimen>
+    <dimen name="widget_today_scores_width">260dp</dimen>
+    <dimen name="widget_today_scores_resize_height">@dimen/widget_today_scores_height</dimen>
+    <dimen name="widget_today_scores_resize_width">@dimen/widget_today_scores_width</dimen>
+</resources>

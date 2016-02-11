@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    </style>
+
+    <style name="MyTabLayout" parent="Widget.Design.TabLayout">
+        <item name="background">?attr/colorPrimary</item>
+        <item name="tabContentStart">@dimen/keyline_1</item>
+        <item name="tabSelectedTextColor">@color/tab_text_1</item>
+        <item name="tabTextColor">@color/tab_text_2</item>
+    </style>
+</resources>

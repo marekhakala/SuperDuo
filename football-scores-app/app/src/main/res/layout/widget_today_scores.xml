@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/widget_today_scores_layout"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+        android:layout_width="match_parent"
+        android:background="@color/widget_title_background"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/widget_today_scores_text"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:paddingLeft="@dimen/keyline_1"
+            android:paddingStart="@dimen/keyline_1"
+            android:text="Todays Football Scores"
+            android:textColor="@color/widget_title_text"
+            android:background="@color/widget_title_background"
+            android:textAppearance="?android:textAppearanceLarge" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/widget_today_scores_content_layout"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="@android:color/white">
+
+        <ListView
+            android:id="@+id/widget_today_scores_list"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:dividerHeight="1dp"
+            android:divider="@color/widget_title_text"
+            tools:listitem="@layout/widget_item_score" />
+
+        <TextView
+            android:id="@+id/widget_today_scores_empty_text"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:text="@string/message_today_scores_empty"
+            android:textColor="@color/primary_text"
+            android:background="@android:color/white"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+    </FrameLayout>
+</LinearLayout>

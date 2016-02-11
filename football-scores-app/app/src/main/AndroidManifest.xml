@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="barqsoft.footballscores" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".FootballScoresApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:supportsRtl="true">
+        <activity
+            android:name=".Ui.Activity.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".DataSource.FetchService" />
+
+        <receiver
+            android:name=".Widget.ScoresWidgetProvider"
+            android:enabled="true"
+            android:label="@string/title_today_scores_widget">
+
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="barqsoft.footballscores.DATA_UPDATED_CODE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_today_scores" />
+        </receiver>
+
+        <activity
+            android:name=".Ui.Activity.AboutActivity"
+            android:label="About"
+            android:parentActivityName=".Ui.Activity.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Ui.Activity.MainActivity" />
+        </activity>
+
+        <service android:name=".Widget.ScoresRemoteViewsService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+    </application>
+</manifest>
