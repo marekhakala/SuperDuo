@@ -21,12 +21,14 @@ import io.realm.RealmResults;
 import io.realm.RealmViewHolder;
 
 public class ScoresRecyclerViewAdapter extends RealmBasedRecyclerViewAdapter<Score, ScoresRecyclerViewAdapter.ScoreViewHolder> {
+    protected Context mScoresContext = null;
     protected OnScoreItemClickListener mOnClickListener = OnScoreItemClickListener.EMPTY;
 
     public ScoresRecyclerViewAdapter(Context context, RealmResults<Score> realmResults,
                                      boolean automaticUpdate, boolean animateIdType,
                                      String animateExtraColumnName) {
         super(context, realmResults, automaticUpdate, animateIdType, animateExtraColumnName);
+        mScoresContext = context;
         setupComponent((AppComponent) FootballScoresApplication.get(context).getComponent());
     }
 
@@ -57,7 +59,8 @@ public class ScoresRecyclerViewAdapter extends RealmBasedRecyclerViewAdapter<Sco
 
         Score scoreObject = realmResults.get(position);
 
-        viewHolder.mLeagueName.setText(UtilityHelper.getLeague(Integer.parseInt(scoreObject.getLeague())));
+        viewHolder.mLeagueName.setText(UtilityHelper.getLeague(mScoresContext.getResources(),
+                Integer.parseInt(scoreObject.getLeague())));
 
         viewHolder.mHomeName.setText(scoreObject.getHome());
         viewHolder.mAwayName.setText(scoreObject.getAway());

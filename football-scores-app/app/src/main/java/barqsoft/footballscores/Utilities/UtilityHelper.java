@@ -1,5 +1,7 @@
 package barqsoft.footballscores.Utilities;
 
+import android.content.res.Resources;
+
 import barqsoft.footballscores.R;
 
 public class UtilityHelper {
@@ -17,36 +19,36 @@ public class UtilityHelper {
     public static final int CHAMPIONS_LEAGUE = 405;
     public static final int LEAGUE_ONE = 425;
 
-    public static String getLeague(int leagueId) {
+    public static String getLeague(Resources resources, int leagueId) {
         switch (leagueId) {
             case BUNDESLIGA1:
-                return "Bundesliga 1";
+                return resources.getString(R.string.bundesliga1);
             case BUNDESLIGA2:
-                return "Bundesliga 2";
+                return resources.getString(R.string.bundesliga2);
             case BUNDESLIGA3:
-                return "Bundesliga 3";
+                return resources.getString(R.string.bundesliga3);
             case LIGUE1:
-                return "Ligue 1";
+                return resources.getString(R.string.ligue1);
             case LIGUE2:
-                return "Ligue 2";
+                return resources.getString(R.string.ligue2);
             case PREMIER_LEAGUE:
-                return "Premier League";
+                return resources.getString(R.string.premierleague);
             case PRIMERA_DIVISION:
-                return "Primera Division";
+                return resources.getString(R.string.primeradivison);
             case SEGUNDA_DIVISION:
-                return "Segunda Division";
+                return resources.getString(R.string.segunda_division);
             case SERIE_A:
-                return "Serie A";
+                return resources.getString(R.string.seriaa);
             case PRIMEIRA_LIGA:
-                return "Primeira Liga";
+                return resources.getString(R.string.primeira_liga);
             case EREDIVISIE:
-                return "Eredivisie";
+                return resources.getString(R.string.eredivise);
             case CHAMPIONS_LEAGUE:
-                return "Champions League";
+                return resources.getString(R.string.champions_league);
             case LEAGUE_ONE:
-                return "League One";
+                return resources.getString(R.string.league_one);
             default:
-                return "Unknown League Please report it.";
+                return resources.getString(R.string.unknown_league);
         }
     }
 

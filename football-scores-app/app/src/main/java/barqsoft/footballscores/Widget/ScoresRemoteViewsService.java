@@ -81,7 +81,7 @@ public class ScoresRemoteViewsService extends RemoteViewsService {
             }
 
             public RemoteViews getRemoteView(RemoteViews views, ScoreItem scoreObject) {
-                String league = UtilityHelper.getLeague(Integer.parseInt(scoreObject.getLeague()));
+                String league = UtilityHelper.getLeague(getResources(), Integer.parseInt(scoreObject.getLeague()));
                 Timber.d("League: " + league);
                 String matchDay = "Match day: " + scoreObject.getMatchDay();
 
