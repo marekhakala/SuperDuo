@@ -14,7 +14,7 @@ android {
         versionName "1.0"
 
         def STRING = "String"
-        buildConfigField STRING, "DATA_API_KEY", "\"228b2bb3f4e24602b53f564aff1a7f6b\""
+        buildConfigField STRING, "DATA_API_KEY", "\"API_KEY\""
     }
     buildTypes {
         release {

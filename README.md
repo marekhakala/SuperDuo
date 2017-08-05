@@ -20,8 +20,7 @@ Added enhancements to two apps in order to make them production ready. The work 
  * [Butter Knife](http://jakewharton.github.io/butterknife/) - UI binding library
  * [Timber](https://github.com/JakeWharton/timber) - Advanced logging library
  * [Dagger 2](http://google.github.io/dagger/) - Dependency Injection library
- * [Retrofit 2](http://square.github.io/retrofit/) - Web API library
- * [RxJava](https://github.com/ReactiveX/RxJava) - Asynchronous and event-based programs library
+ * [Retrofit](http://square.github.io/retrofit/) - Web API library
  * [LeakCanary](https://github.com/square/leakcanary) - A memory leak detection library
 
  ## Udacity Nanodegree SuperDuo Project
